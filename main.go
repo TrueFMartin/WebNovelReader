@@ -110,7 +110,7 @@ func main() {
 			log.Fatal(err)
 		}
 		//print progress of ebook writing
-		percentComplete := fmt.Sprintf("%v/%v", i, len(chapterGroup))
+		percentComplete := fmt.Sprintf("%v/%v", i, len(chapterGroup)-1)
 		fmt.Printf("\rProgress: %s", percentComplete)
 	}
 
